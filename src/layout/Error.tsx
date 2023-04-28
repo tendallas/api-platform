@@ -2,15 +2,7 @@ import React from 'react';
 import type { HtmlHTMLAttributes } from 'react';
 import { Title, useTranslate } from 'react-admin';
 import type { ErrorProps } from 'react-admin';
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Box,
-  Button,
-  Typography,
-  styled,
-} from '@mui/material';
+import pkg from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore.js'; // eslint-disable-line import/extensions
 import HistoryIcon from '@mui/icons-material/History.js'; // eslint-disable-line import/extensions
 import RefreshIcon from '@mui/icons-material/Refresh.js'; // eslint-disable-line import/extensions
@@ -18,6 +10,15 @@ import type { FallbackProps } from 'react-error-boundary';
 import LogoError from './LogoError.js';
 
 const PREFIX = 'RaError';
+const {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Box,
+  Button,
+  Typography,
+  styled,
+} = pkg;
 
 export const ErrorClasses = {
   container: `${PREFIX}-container`,
